@@ -1,0 +1,21 @@
+platform: linux
+# 使用するdocker imageを定義
+image_resource:
+  type: docker-image
+  source:
+    repository: library/maven
+    tag: latest
+# piplineのresourcesで定義し、jobsのgetで定義したものをコンテナ内で読み込むために、inputを定義する必要があります
+# ちなみに、今回はありませんが、コンテナ内で生成したファイルを出力するには、outputを定義します。
+inputs:
+  - name: kantan_pipeline_resource
+  - name: kantan_resource
+# キャッシュするディレクトリを定義します。
+# workerが生きている限り（docker-compose downしない限り）生き続けます。
+# caches:
+#  - path: rails-sample/vendor/bundle
+# ここで読み込んでいるシェルスクリプトに処理の詳細を記載します。
+run:
+  path: kantan_pipeline_resource/scripts/build.sh
+
+

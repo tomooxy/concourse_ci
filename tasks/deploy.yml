@@ -5,7 +5,7 @@ image_resource:
     repository: governmentpaas/cf-cli
     tag: latest
 inputs:
-  - name: pipelines-repo
-  - name: capistrano-sample 
+  - name: kantan_pipeline_resource
+  - name: kantan_resource
 run:
   path: pipelines-repo/rails-sample/scripts/deploy.sh

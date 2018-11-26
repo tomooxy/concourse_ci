@@ -85,9 +85,9 @@ jobs:
   plan:
     # 前述のjobであるrails-job-productionで使用したリソースをこちらのコンテナでも使うために、passedを定義します。
     - get: kantan_resource
-      passed: [ kantan_job_production ]
+    #  passed: [ kantan_job_production ]
       trigger: true
     - get: kantan_pipeline_resource
-      passed: [ kantan_job_production ]
+    #  passed: [ kantan_job_production ]
     - task: deploy
       file: kantan_pipeline_resource/tasks/deploy.yml

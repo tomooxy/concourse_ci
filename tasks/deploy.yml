@@ -8,4 +8,4 @@ inputs:
   - name: kantan_pipeline_resource
   - name: kantan_resource
 run:
-  path: pipelines-repo/rails-sample/scripts/deploy.sh
+  path: kantan_pipeline_resource/scripts/deploy.sh

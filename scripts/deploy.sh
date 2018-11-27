@@ -1,12 +1,12 @@
 #!/bin/bash
-#export http_proxy=http://88429:Tomochi6@exaproxy.exa-corp.co.jp:8080
-#export https_proxy=http://88429:Tomochi6@exaproxy.exa-corp.co.jp:8080
-export HTTP_PROXY=http://exaproxy.exa-corp.co.jp:8080
-export HTTPS_PROXY=http://exaproxy.exa-corp.co.jp:8080
+unset http_proxy=
+unset https_proxy=
+#export HTTP_PROXY=http://exaproxy.exa-corp.co.jp:8080
+#export HTTPS_PROXY=http://exaproxy.exa-corp.co.jp:8080
 ##sudo wget -O /etc/yum.repos.d/cloudfoundry-cli.repo https://packages.cloudfoundry.org/fedora/cloudfoundry-cli.repo -e HTTP_PROXY=exaproxy.exa-corp.co.jp:8080 -e HTTPS_PROXY=exaproxy.exa-corp.co.jp:8080
-yum -y install wget
-wget -O /etc/yum.repos.d/cloudfoundry-cli.repo https://packages.cloudfoundry.org/fedora/cloudfoundry-cli.repo
-yum -y install cf-cli
+#yum -y install wget
+#wget -O /etc/yum.repos.d/cloudfoundry-cli.repo https://packages.cloudfoundry.org/fedora/cloudfoundry-cli.repo
+#yum -y install cf-cli
 #export CF_STARTUP_TIMEOUT=30
 #curl https://api.run.pivotal.io/v2/info
 #cf set-env http_proxy "exaproxy.exa-corp.co.jp:8080"

@@ -2,7 +2,8 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: governmentpaas/cf-cli
+  # repository: governmentpaas/cf-cli
+    repository: centos
     tag: latest
 inputs:
   - name: kantan_pipeline_resource

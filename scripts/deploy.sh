@@ -1,4 +1,5 @@
 #!/bin/bash
+unset no_proxy
 #unset http_proxy
 #unset https_proxy
 #export HTTP_PROXY=http://exaproxy.exa-corp.co.jp:8080

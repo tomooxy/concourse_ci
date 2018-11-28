@@ -13,9 +13,8 @@
 #cf set-env http_proxy "exaproxy.exa-corp.co.jp:8080"
 #cf set-env https_proxy "exaproxy.exa-corp.co.jp:8080"
 printenv
+scp -p 2200 -i kantan_pipeline_resource/key kantan_resource/kantanPro/target/kantanPro-0.0.1-SNAPSHOT.jar vagrant@127.0.0.1:/home/vagrant/concourse/module/
 #cf login -a api.run.pivotal.io -u tomoyuki-ito@exa-corp.co.jp -p P@ssw0rd
 ##cf login -a api.run.pivotal.io
 #cd kantan_resource/kantanPro/target/
 #cf push kantanPro-0.0.1-SNAPSHOT.jar -t 30
-ssh -v
-scp -v

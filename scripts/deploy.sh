@@ -18,3 +18,4 @@ printenv
 #cd kantan_resource/kantanPro/target/
 #cf push kantanPro-0.0.1-SNAPSHOT.jar -t 30
 ssh -v
+scp -v

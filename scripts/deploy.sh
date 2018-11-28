@@ -1,5 +1,5 @@
 #!/bin/bash
-unset no_proxy
+#unset no_proxy
 #unset http_proxy
 #unset https_proxy
 #export HTTP_PROXY=http://exaproxy.exa-corp.co.jp:8080
@@ -13,7 +13,8 @@ unset no_proxy
 #cf set-env http_proxy "exaproxy.exa-corp.co.jp:8080"
 #cf set-env https_proxy "exaproxy.exa-corp.co.jp:8080"
 printenv
-cf login -a api.run.pivotal.io -u tomoyuki-ito@exa-corp.co.jp -p P@ssw0rd
+#cf login -a api.run.pivotal.io -u tomoyuki-ito@exa-corp.co.jp -p P@ssw0rd
 ##cf login -a api.run.pivotal.io
-cd kantan_resource/kantanPro/target/
-cf push kantanPro-0.0.1-SNAPSHOT.jar -t 30
+#cd kantan_resource/kantanPro/target/
+#cf push kantanPro-0.0.1-SNAPSHOT.jar -t 30
+ssh -v

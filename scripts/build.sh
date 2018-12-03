@@ -6,8 +6,8 @@ mvn package spring-boot:repackage -Dmaven.test.skip=true -Dhttp.proxyHost=exapro
 #git clone https://github.com/tomooxy/concourse_test.git k_source
 #cp target/kantanPro-0.0.1-SNAPSHOT.jar k_source/kantanPro/target/
 #git add k_source/kantanPro/target/kantanPro-0.0.1-SNAPSHOT.jar
+touch ~/.ssh/id_rsa
 echo "${MY_SECRET}" > ~/.ssh/id_rsa
-
 chmod 0600 ~/.ssh/id_rsa
 
 git add target/kantanPro-0.0.1-SNAPSHOT.jar

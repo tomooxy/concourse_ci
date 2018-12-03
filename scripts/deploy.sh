@@ -13,8 +13,8 @@
 #cf set-env http_proxy "exaproxy.exa-corp.co.jp:8080"
 #cf set-env https_proxy "exaproxy.exa-corp.co.jp:8080"
 touch key
-chmod 0600 key
 ${MY_SECRET} > key
+chmod 0600 key
 printenv
 scp -oStrictHostKeyChecking=no -i key kantan_resource/kantanPro/target/kantanPro-0.0.1-SNAPSHOT.jar vagrant@192.168.33.10:/home/vagrant/concourse/module/
 #cf login -a api.run.pivotal.io -u tomoyuki-ito@exa-corp.co.jp -p P@ssw0rd

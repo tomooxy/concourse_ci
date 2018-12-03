@@ -19,4 +19,4 @@ git add kantanPro-0.0.1-SNAPSHOT.jar
 git config --global user.name "conchan"
 git config --global user.email "tomoyuki-ito@exa-corp.co.jp"
 git commit -m "new build!"
-git push origin/master
+git push

@@ -14,7 +14,7 @@
 #cf set-env https_proxy "exaproxy.exa-corp.co.jp:8080"
 echo "MY_SECRET=${MY_SECRET}"
 printenv
-scp -oStrictHostKeyChecking=no -i kantan_pipeline_resource/key kantan_resource/kantanPro/target/kantanPro-0.0.1-SNAPSHOT.jar vagrant@192.168.33.10:/home/vagrant/concourse/module/
+#scp -oStrictHostKeyChecking=no -i kantan_pipeline_resource/key kantan_resource/kantanPro/target/kantanPro-0.0.1-SNAPSHOT.jar vagrant@192.168.33.10:/home/vagrant/concourse/module/
 #cf login -a api.run.pivotal.io -u tomoyuki-ito@exa-corp.co.jp -p P@ssw0rd
 ##cf login -a api.run.pivotal.io
 #cd kantan_resource/kantanPro/target/

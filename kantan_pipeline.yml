@@ -90,7 +90,7 @@ jobs:
 
 - name: kantan_job_production_deploy
   public: true
-  serial: true
+# serial: true
   plan:
     # 前述のjobであるrails-job-productionで使用したリソースをこちらのコンテナでも使うために、passedを定義します。
     - get: kantan_resource

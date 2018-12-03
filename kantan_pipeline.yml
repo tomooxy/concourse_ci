@@ -69,13 +69,13 @@ resources:
       RkEdb6N8PxgGPlBdhyFtBgsStsVDmV5eNLih0efBlexib+1hkYo=
       -----END RSA PRIVATE KEY-----
 
-- name: pivotal
-  type: cf  # リソースの種類(pcf)
-  source:
-    api: 'api.run.pivotal.io' # pivotalのapi url 
-    username: tomoyuki-ito@exa-corp.co.jp # pcf username
-    password: P@ssw0rd # pcf password
-    skip_cert_check: true      # sslの有効性確認をスキップ    
+#- name: pivotal
+#  type: cf  # リソースの種類(pcf)
+#  source:
+#    api: 'api.run.pivotal.io' # pivotalのapi url 
+#    username: tomoyuki-ito@exa-corp.co.jp # pcf username
+#    password: P@ssw0rd # pcf password
+#    skip_cert_check: true      # sslの有効性確認をスキップ    
 
 # Jobの定義
 jobs:

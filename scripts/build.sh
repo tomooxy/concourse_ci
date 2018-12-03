@@ -12,6 +12,7 @@ git clone https://github.com/tomooxy/concourse_test.git k_source
 cp target/kantanPro-0.0.1-SNAPSHOT.jar k_source/kantanPro/target/
 git add k_source/kantanPro/target/kantanPro-0.0.1-SNAPSHOT.jar
 
+cd k_source
 #git add target/kantanPro-0.0.1-SNAPSHOT.jar
 git config --global user.name "conchan"
 git config --global user.email "tomoyuki-ito@exa-corp.co.jp"

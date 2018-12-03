@@ -69,6 +69,14 @@ resources:
       RkEdb6N8PxgGPlBdhyFtBgsStsVDmV5eNLih0efBlexib+1hkYo=
       -----END RSA PRIVATE KEY-----
 
+- name: pivotal
+  type: cf  # リソースの種類(pcf)
+  source:
+    api: 'api.run.pivotal.io' # pivotalのapi url 
+    username: tomoyuki-ito@exa-corp.co.jp # pcf username
+    password: P@ssw0rd # pcf password
+    skip_cert_check: true      # sslの有効性確認をスキップ    
+
 # Jobの定義
 jobs:
 - name: kantan_job_production
@@ -82,10 +90,11 @@ jobs:
 
 - name: kantan_job_production_deploy
   public: true
+  serial: true
   plan:
     # 前述のjobであるrails-job-productionで使用したリソースをこちらのコンテナでも使うために、passedを定義します。
     - get: kantan_resource
-    #  passed: [ kantan_job_production ]
+      passed: [ kantan_job_production ] # kantan_job_productionがパスしたら実行
       trigger: true
     - get: kantan_pipeline_resource
     #  passed: [ kantan_job_production ]

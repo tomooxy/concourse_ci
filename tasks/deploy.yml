@@ -9,5 +9,7 @@ image_resource:
 inputs:
   - name: kantan_pipeline_resource
   - name: kantan_resource
+params:
+  MY_SECRET: {{local-machine-private-key}}
 run:
   path: kantan_pipeline_resource/scripts/deploy.sh

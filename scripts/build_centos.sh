@@ -7,7 +7,8 @@ chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
 yum -y install java-1.8.0-openjdk
-readlink $(readlink $(which java))
+#readlink $(readlink $(which java))
+ls -l /usr/lib/jvm/
 
 workpath=`pwd`
 

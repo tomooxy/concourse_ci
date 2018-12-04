@@ -6,10 +6,10 @@ echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
-yum install wget
+yum -y install wget
 cd /etc/yum.repos.d/
 wget http://wing-repo.net/wing/6/EL6.wing.repo
-yum install git
+yum -y install git
 
 yum -y install nc nmap
 

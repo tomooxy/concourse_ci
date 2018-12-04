@@ -6,6 +6,9 @@ echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
+yum search java-1.8.0-openjdk
+yum install java-1.8.0-openjdk
+
 workpath=`pwd`
 
 yum -y install wget

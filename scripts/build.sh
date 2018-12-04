@@ -6,7 +6,7 @@ echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
-yum -y install nc nmap
+sudo yum -y install nc nmap
 
 #export MAVEN_OPTS="-DsocksProxyHost=exaproxy.exa-corp.co.jp -DsocksProxyPort=8080"
 cd kantan_resource/kantanPro

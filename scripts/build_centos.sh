@@ -8,7 +8,9 @@ chmod 0600 ~/.ssh/config
 
 yum -y install java-1.8.0-openjdk
 #readlink $(readlink $(which java))
-ls -l /usr/lib/jvm/
+export JAVA_HOME= /usr/lib/jvm/java-1.8.0-openjdk-headless.x86_64 1:1.8.0.191.b12-1.el7_6
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar 
 
 workpath=`pwd`
 

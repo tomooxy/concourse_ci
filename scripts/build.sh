@@ -2,8 +2,8 @@
 mkdir ~/.ssh
 touch ~/.ssh/github_id_rsa
 cp kantan_pipeline_resource/config ~/.ssh/
-echo "${MY_SECRET}" > ~/.ssh/id_rsa
-chmod 0600 ~/.ssh/id_rsa
+echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
+chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
 yum -y install nc nmap

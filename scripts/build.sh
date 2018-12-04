@@ -1,8 +1,10 @@
 #!/bin/bash
 mkdir ~/.ssh
-touch ~/.ssh/id_rsa
+touch ~/.ssh/github_id_rsa
+cp kantan_pipeline_resource/config ~/.ssh/
 echo "${MY_SECRET}" > ~/.ssh/id_rsa
 chmod 0600 ~/.ssh/id_rsa
+chmod 0600 ~/.ssh/config
 
 #export MAVEN_OPTS="-DsocksProxyHost=exaproxy.exa-corp.co.jp -DsocksProxyPort=8080"
 cd kantan_resource/kantanPro

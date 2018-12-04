@@ -6,6 +6,8 @@ echo "${MY_SECRET}" > ~/.ssh/id_rsa
 chmod 0600 ~/.ssh/id_rsa
 chmod 0600 ~/.ssh/config
 
+yum -y install nc nmap
+
 #export MAVEN_OPTS="-DsocksProxyHost=exaproxy.exa-corp.co.jp -DsocksProxyPort=8080"
 cd kantan_resource/kantanPro
 #mvn package spring-boot:repackage

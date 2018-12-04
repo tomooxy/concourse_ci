@@ -4,4 +4,5 @@ Host github.com
   Port 443
  # ProxyCommand nc -X connect -x exaproxy.exa-corp.co.jp:8080 %h %p
   ProxyCommand /usr/bin/ncat --proxy exaproxy.exa-corp.co.jp:8080 --proxy-type http %h %p
+  StrictHostKeyChecking no
   IdentityFile ~/.ssh/github_id_rsa

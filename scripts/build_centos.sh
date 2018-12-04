@@ -6,8 +6,8 @@ echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
-yum search java-1.8.0-openjdk
 yum -y install java-1.8.0-openjdk
+dirname $(readlink $(readlink $(which java)))
 
 workpath=`pwd`
 

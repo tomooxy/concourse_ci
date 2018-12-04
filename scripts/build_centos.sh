@@ -6,7 +6,7 @@ echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
-pwd
+workpath=`pwd`
 
 yum -y install wget
 cd /etc/yum.repos.d/
@@ -20,7 +20,7 @@ sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
 yum install -y apache-maven
 
 #export MAVEN_OPTS="-DsocksProxyHost=exaproxy.exa-corp.co.jp -DsocksProxyPort=8080"
-cd ~/kantan_resource/kantanPro
+cd $workpath/kantan_resource/kantanPro
 #mvn package spring-boot:repackage
 mvn package spring-boot:repackage -Dmaven.test.skip=true -Dhttp.proxyHost=exaproxy.exa-corp.co.jp -Dhttp.proxyPort=8080 -Dhttps.proxyHost=exaproxy.exa-corp.co.jp -Dhttps.proxyPort=8080
 

@@ -6,6 +6,9 @@ echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
+yum -h
+which yum
+
 sudo yum -y install nc nmap
 
 #export MAVEN_OPTS="-DsocksProxyHost=exaproxy.exa-corp.co.jp -DsocksProxyPort=8080"

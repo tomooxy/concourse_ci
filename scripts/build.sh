@@ -6,8 +6,8 @@ echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
-yum -h
-which yum
+#yum -h
+#which yum
 
 sudo yum -y install nc nmap
 

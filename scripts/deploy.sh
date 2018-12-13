@@ -15,7 +15,7 @@
 touch key
 echo "${MY_SECRET}" > key
 chmod 0600 key
-scp -oStrictHostKeyChecking=no -i key kantan_resource/kantanPro/target/kantanPro-0.0.1-SNAPSHOT.jar vagrant@192.168.33.10:/home/vagrant/concourse/module/
+scp -oStrictHostKeyChecking=no -i key kantan_module_resource/modules/kantanPro-0.0.1-SNAPSHOT.jar vagrant@192.168.33.10:/home/vagrant/concourse/module/
 
 ssh -oStrictHostKeyChecking=no -i key vagrant@192.168.33.10 <<EOC
 cd /home/vagrant/concourse/module/

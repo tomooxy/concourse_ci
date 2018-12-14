@@ -41,6 +41,7 @@ jobs:
   - task: build
     params:
       LOCAL-MACHINE-PRIVATE-KEY: ((local-machine-private-key))
+      GITHUB-PRIVATE-KEY: ((github-private-key))
     file: kantan_pipeline_resource/tasks/build.yml
 
 - name: kantan_job_production_deploy
@@ -57,4 +58,5 @@ jobs:
     - task: deploy
       params:
         LOCAL-MACHINE-PRIVATE-KEY: ((local-machine-private-key))
+        GITHUB-PRIVATE-KEY: ((github-private-key))
       file: kantan_pipeline_resource/tasks/deploy.yml

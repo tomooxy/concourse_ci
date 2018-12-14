@@ -10,7 +10,7 @@ inputs:
   - name: kantan_pipeline_resource
   - name: kantan_resource
   - name: kantan_module_resource
-params:
-  MY_SECRET: LOCAL-MACHINE-PRIVATE-KEY
+#params:
+#  MY_SECRET: LOCAL-MACHINE-PRIVATE-KEY
 run:
   path: kantan_pipeline_resource/scripts/deploy.sh

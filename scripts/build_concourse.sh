@@ -2,7 +2,7 @@
 mkdir ~/.ssh
 touch ~/.ssh/github_id_rsa
 cp kantan_pipeline_resource/config ~/.ssh/
-echo "${MY_SECRET}" > ~/.ssh/github_id_rsa
+echo "${GITHUB-PRIVATE-KEY}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 

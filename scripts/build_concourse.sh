@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "key"
 echo "${GITHUB-PRIVATE-KEY}"
+printenv
 
 mkdir ~/.ssh
 touch ~/.ssh/github_id_rsa

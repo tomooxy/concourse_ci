@@ -39,6 +39,8 @@ jobs:
     trigger: true # Resourceに変更があれば自動でジョブを実行するかどうか
   - get: kantan_pipeline_resource
   - task: build
+    params:
+      LOCAL-MACHINE-PRIVATE-KEY: ((local-machine-private-key))
     file: kantan_pipeline_resource/tasks/build.yml
 
 - name: kantan_job_production_deploy
@@ -53,4 +55,6 @@ jobs:
     - get: kantan_module_resource
       trigger: true # Resourceに変更があれば自動でジョブを実行するかどうか
     - task: deploy
+      params:
+        LOCAL-MACHINE-PRIVATE-KEY: ((local-machine-private-key))
       file: kantan_pipeline_resource/tasks/deploy.yml

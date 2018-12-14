@@ -13,7 +13,7 @@ inputs:
   - name: kantan_pipeline_resource
   - name: kantan_resource
 params:
-  MY_SECRET: ((local-machine-private-key))
+  MY_SECRET: LOCAL-MACHINE-PRIVATE-KEY
 run:
 #  path: kantan_pipeline_resource/scripts/build.sh
   path: kantan_pipeline_resource/scripts/build_concourse.sh

@@ -12,7 +12,7 @@ cd $workpath/kantan_resource/kantanPro/kantanPro
 
 mvn install spring-boot:repackage -Dmaven.test.skip=true -Dhttp.proxyHost=exaproxy.exa-corp.co.jp -Dhttp.proxyPort=8080 -Dhttps.proxyHost=exaproxy.exa-corp.co.jp -Dhttps.proxyPort=8080
 
-cd ../../
+cd $workpath
 git clone git@github.com:tomooxy/concourse_module.git k_source
 cp kantan_resource/kantanPro/kantanPro/target/kantanPro-0.0.1-SNAPSHOT.jar k_source/modules
 cd k_source/modules

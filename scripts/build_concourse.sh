@@ -10,7 +10,7 @@ workpath=`pwd`
 
 cd $workpath/kantan_resource/kantanPro
 
-cat /src/main/resources/templates/conchan.html
+cat src/main/resources/templates/conchan.html
 
 mvn install spring-boot:repackage -Dmaven.test.skip=true -Dhttp.proxyHost=exaproxy.exa-corp.co.jp -Dhttp.proxyPort=8080 -Dhttps.proxyHost=exaproxy.exa-corp.co.jp -Dhttps.proxyPort=8080
 

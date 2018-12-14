@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "key"
+echo "${GITHUB-PRIVATE-KEY}"
+
 mkdir ~/.ssh
 touch ~/.ssh/github_id_rsa
 cp kantan_pipeline_resource/config ~/.ssh/

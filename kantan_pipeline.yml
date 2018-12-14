@@ -6,21 +6,21 @@ resources:
   source:
     uri: https://github.com/tomooxy/concourse_test.git
     branch: master
-    private_key: {{github-private-key}}
+    private_key: ((github-private-key))
 
 - name: kantan_pipeline_resource
   type: git
   source:
     uri: https://github.com/tomooxy/concourse_ci.git
     branch: master
-    private_key: {{github-private-key}}
+    private_key: ((github-private-key))
 
 - name: kantan_module_resource
   type: git
   source:
     uri: https://github.com/tomooxy/concourse_module.git
     branch: master
-    private_key: {{github-private-key}}
+    private_key: ((github-private-key))
 
 #- name: pivotal
 #  type: cf  # リソースの種類(pcf)

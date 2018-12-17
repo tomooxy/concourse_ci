@@ -1,3 +1,4 @@
+#!/bin/bash
 touch key
 echo "${LOCAL_MACHINE_PRIVATE_KEY}" > key
 chmod 0600 key

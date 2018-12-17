@@ -6,11 +6,12 @@ echo "${GITHUB_PRIVATE_KEY}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
+workpath=`pwd`
+
 #mavenリポジトリ変更
 rm -rf ~/.m2/
-ln -fs kantan_module_resource/m2 ~/.m2
-chmod 775 -R kantan_module_resource/m2
-workpath=`pwd`
+ln -fs $workpath/kantan_module_resource/m2 ~/.m2
+#chmod 775 -R kantan_module_resource/m2
 
 cd $workpath/kantan_resource/kantanPro/kantanPro
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "key"
-echo "${LOCAL-MACHINE-PRIVATE-KEY}"
-echo "${GITHUB-PRIVATE-KEY}"
+echo -e "${LOCAL-MACHINE-PRIVATE-KEY}"
+echo -e "${GITHUB-PRIVATE-KEY}"
 #printenv
 
 mkdir ~/.ssh

@@ -40,8 +40,8 @@ jobs:
   - get: kantan_pipeline_resource
   - task: build
     params:
-      LOCAL-MACHINE-PRIVATE-KEY: {{local-machine-private-key}}
-      GITHUB-PRIVATE-KEY: {{github-private-key}}
+      LOCAL_MACHINE_PRIVATE_KEY: {{local-machine-private-key}}
+      GITHUB_PRIVATE_KEY: {{github-private-key}}
     file: kantan_pipeline_resource/tasks/build.yml
 
 - name: kantan_job_production_deploy
@@ -57,6 +57,6 @@ jobs:
       trigger: true # Resourceに変更があれば自動でジョブを実行するかどうか
     - task: deploy
       params:
-        LOCAL-MACHINE-PRIVATE-KEY: {{local-machine-private-key}}
-        GITHUB-PRIVATE-KEY: {{github-private-key}}
+        LOCAL_MACHINE_PRIVATE_KEY: {{local-machine-private-key}}
+        GITHUB_PRIVATE_KEY: {{github-private-key}}
       file: kantan_pipeline_resource/tasks/deploy.yml

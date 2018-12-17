@@ -3,6 +3,8 @@ echo "key"
 printenv
 echo -e "${LOCAL-MACHINE-PRIVATE-KEY}"
 echo -e ${GITHUB-PRIVATE-KEY}
+echo -e "${LOCAL_MACHINE_PRIVATE_KEY}"
+echo -e ${GITHUB_PRIVATE_KEY}
 
 
 mkdir ~/.ssh

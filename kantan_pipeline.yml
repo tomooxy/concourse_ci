@@ -22,6 +22,13 @@ resources:
     branch: master
     private_key: {{github-private-key}}
 
+- name: kantan_maven_repo
+  type: git
+  source:
+    uri: https://github.com/tomooxy/maven-repo.git
+    branch: master
+    private_key: {{github-private-key}}
+
 #- name: pivotal
 #  type: cf  # リソースの種類(pcf)
 #  source:
@@ -38,7 +45,7 @@ jobs:
   - get: kantan_resource
     trigger: true # Resourceに変更があれば自動でジョブを実行するかどうか
   - get: kantan_pipeline_resource
-  - get: kantan_module_resource
+  - get: kantan_maven_repo
   - task: build
     params:
       LOCAL_MACHINE_PRIVATE_KEY: {{local-machine-private-key}}

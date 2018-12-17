@@ -10,9 +10,9 @@ workpath=`pwd`
 
 #mavenリポジトリ変更
 rm -rf ~/.m2/
-ls $workpath/kantan_module_resource/m2/
+ls $workpath/kantan_maven_repo/m2/
 
-ln -s $workpath/kantan_module_resource/m2 ~/.m2
+ln -s $workpath/kantan_maven_repo/m2 ~/.m2
 ls ~/.m2/
 #chmod 775 -R ~/.m2
 

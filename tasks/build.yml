@@ -12,7 +12,7 @@ image_resource:
 inputs:
   - name: kantan_pipeline_resource
   - name: kantan_resource
-  - name: kantan_module_resource
+  - name: kantan_maven_repo
 #params:
 #  MY_SECRET: LOCAL-MACHINE-PRIVATE-KEY
 run:

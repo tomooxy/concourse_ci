@@ -7,8 +7,8 @@ chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
 #mavenリポジトリ変更
-rm -rf ~/.m2
-ln -fs kantan_module_resource/m2 ~/.m2
+rm -rf ~/.m2/repository
+ln -fs kantan_module_resource/m2/repository ~/.m2/repository
 
 workpath=`pwd`
 

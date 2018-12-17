@@ -38,6 +38,7 @@ jobs:
   - get: kantan_resource
     trigger: true # Resourceに変更があれば自動でジョブを実行するかどうか
   - get: kantan_pipeline_resource
+  - get: kantan_module_resource
   - task: build
     params:
       LOCAL_MACHINE_PRIVATE_KEY: {{local-machine-private-key}}

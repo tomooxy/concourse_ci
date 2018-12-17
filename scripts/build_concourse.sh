@@ -1,16 +1,8 @@
 #!/bin/bash
-echo "key"
-printenv
-echo -e "${LOCAL-MACHINE-PRIVATE-KEY}"
-echo -e ${GITHUB-PRIVATE-KEY}
-echo -e "${LOCAL_MACHINE_PRIVATE_KEY}"
-echo -e ${GITHUB_PRIVATE_KEY}
-
-
 mkdir ~/.ssh
 touch ~/.ssh/github_id_rsa
 cp kantan_pipeline_resource/config ~/.ssh/
-echo "${GITHUB-PRIVATE-KEY}" > ~/.ssh/github_id_rsa
+echo "${GITHUB_PRIVATE_KEY}" > ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/github_id_rsa
 chmod 0600 ~/.ssh/config
 
